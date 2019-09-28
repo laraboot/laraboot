@@ -31,8 +31,8 @@
 
     <repositories>
         <repository>
-            <id>laraboot</id>
-            <url>https://raw.github.com/laraboot/laraboot-framework/master</url>
+            <id>laraboot-framework-package</id>
+            <url>https://raw.github.com/laraboot/laraboot-framework-package/master</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -50,7 +50,7 @@
         </dependency>
 
         <dependency>
-            <groupId>laraboot</groupId>
+            <groupId>cn.laraboot</groupId>
             <artifactId>framework</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
