@@ -1,7 +1,7 @@
 package cn.laraboot.app.http.middlewares;
 
-import cn.laraboot.framework.contracts.kernel.pipeline.Stack;
-import cn.laraboot.framework.http.middlewares.HttpMiddleware;
+import cn.laraboot.contracts.kernel.pipeline.Stack;
+import cn.laraboot.http.middlewares.HttpMiddleware;
 import org.springframework.http.ResponseEntity;
 
 import javax.servlet.http.HttpServletRequest;

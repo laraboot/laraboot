@@ -1,9 +1,9 @@
 import cn.laraboot.ApiApplication;
 import cn.laraboot.app.repositories.UserRepository;
-import cn.laraboot.framework.auth.AuthManager;
-import cn.laraboot.framework.contracts.kernel.SecretProvider;
-import cn.laraboot.framework.encryption.EncrypterManager;
-import cn.laraboot.framework.hashing.HashManager;
+import cn.laraboot.auth.AuthManager;
+import cn.laraboot.contracts.kernel.SecretProvider;
+import cn.laraboot.encryption.EncrypterManager;
+import cn.laraboot.hashing.HashManager;
 import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 import org.junit.Assert;
 import org.junit.Test;
@@ -16,7 +16,7 @@ import java.util.Arrays;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ApiApplication.class)
-public class BaseKernelTest {
+public class FoundationTest {
 
     @Autowired
     private AuthManager authManager;
@@ -45,7 +45,6 @@ public class BaseKernelTest {
 
         System.out.println(Arrays.toString(MessageDigestAlgorithms.values()));
 
-
         // sha1
         String[] arr = new String[]{"md5", "sha1", "sha256", "sha512", "sha384"};
 
@@ -56,7 +55,6 @@ public class BaseKernelTest {
             System.out.println("算法:" + name + ",哈希后:" + hashedValue);
             Assert.assertTrue("失败了", hashManager.driver(name).check("string", hashedValue));
         }
-
     }
 
     @Test

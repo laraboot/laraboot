@@ -1,6 +1,6 @@
 package cn.laraboot.app.models;
 
-import cn.laraboot.framework.contracts.auth.AuthenticateAble;
+import cn.laraboot.contracts.auth.AuthenticateAble;
 import lombok.Data;
 
 import javax.persistence.*;

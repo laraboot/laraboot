@@ -1,6 +1,6 @@
 package cn.laraboot.app.exceptions;
 
-import cn.laraboot.framework.debug.ExceptionHandler;
+import cn.laraboot.debug.ExceptionHandler;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 

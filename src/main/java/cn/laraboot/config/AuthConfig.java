@@ -1,11 +1,11 @@
 package cn.laraboot.config;
 
 import cn.laraboot.app.models.User;
-import cn.laraboot.framework.auth.DatabaseUserProvider;
-import cn.laraboot.framework.auth.guard.JwtGuard;
-import cn.laraboot.framework.contracts.auth.AuthenticateAble;
-import cn.laraboot.framework.contracts.auth.Guard;
-import cn.laraboot.framework.contracts.auth.GuardProvider;
+import cn.laraboot.auth.DatabaseUserProvider;
+import cn.laraboot.auth.guard.JwtGuard;
+import cn.laraboot.contracts.auth.AuthenticateAble;
+import cn.laraboot.contracts.auth.Guard;
+import cn.laraboot.contracts.auth.GuardProvider;
 import com.auth0.jwt.algorithms.Algorithm;
 import cn.laraboot.app.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

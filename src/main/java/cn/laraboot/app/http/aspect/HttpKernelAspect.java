@@ -1,6 +1,6 @@
 package cn.laraboot.app.http.aspect;
 
-import cn.laraboot.framework.http.aspect.HttpAspect;
+import cn.laraboot.http.aspect.HttpAspect;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

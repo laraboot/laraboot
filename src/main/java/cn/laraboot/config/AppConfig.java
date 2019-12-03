@@ -1,10 +1,10 @@
 package cn.laraboot.config;
 
-import cn.laraboot.framework.auth.AuthManager;
-import cn.laraboot.framework.contracts.auth.GuardProvider;
-import cn.laraboot.framework.contracts.kernel.SecretProvider;
-import cn.laraboot.framework.encryption.EncrypterManager;
-import cn.laraboot.framework.hashing.HashManager;
+import cn.laraboot.auth.AuthManager;
+import cn.laraboot.contracts.auth.GuardProvider;
+import cn.laraboot.contracts.kernel.SecretProvider;
+import cn.laraboot.encryption.EncrypterManager;
+import cn.laraboot.hashing.HashManager;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +19,7 @@ public class AppConfig implements SecretProvider {
     /**
      * app密钥
      */
-    private String secret = "apiboot";
+    private String secret = "laraboot";
 
     @Override
     public String get() {

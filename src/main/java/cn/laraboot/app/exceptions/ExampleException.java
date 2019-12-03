@@ -1,6 +1,6 @@
 package cn.laraboot.app.exceptions;
 
-import cn.laraboot.framework.debug.RenderableException;
+import cn.laraboot.debug.RenderableException;
 import org.springframework.http.HttpStatus;
 
 public class ExampleException extends RenderableException {
